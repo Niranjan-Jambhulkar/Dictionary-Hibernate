@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+.pointer{
+	cursor: pointer;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+/* Login Start */
+
+.background-login{
+    background-image: url(../img/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-login{
+    width: 350px;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.login-btn{
+    background-color:rgb(238, 137, 48);
+    border-radius: 12px;
+    margin-top: 20px;
+    border-style: none;
+    width: 100px;
+    height: 30px;
+    color: white;
+}
+
+.login-checkbox{
+	margin-top: 15px;
+}
+
+.login-label{
+    padding-left: 12px;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 500;
+    color: black;
+}
+
+
+@media (max-width: 600px){
+    .container-login{
+        width: 250px;
+        margin-left: 150px;
+    }
+    .background-login{
+        background-size: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px){
+    .container-login{
+        width: 300px;
+        margin-left: 250px;
+    }
+    .background-login{
+        background-size: auto;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    .container-login{
+        width: 350px;
+        margin-left: 350px;
+    }
+    .background-login{
+        background-size: auto;
+    }
+}
+
+/* Login End */
+
+/* SignUp Start */
+.background-signup{
+	background-image: url("../img/Sign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-signup{
+    width: 370px;
+    margin-left: 150px;
+    margin-top: 120px;
+    backdrop-filter: blur(10px);
+}
+
+.signup-input{
+    width: 350px;
+}
+
+.signup-label{
+    padding-left: 12px;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 500;
+    color: white;
+}
+
+.signup-heading{
+    color: white;
+    font-weight: 700; 
+    text-align: center; 
+    font-size:35px;
+}
+
+.signup-btn{
+    background-color:rgb(238, 137, 48);
+    border-radius: 12px;
+    margin-top: 20px;
+    border-style: none;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: large;
+    margin-left: 110px;
+}
+
+@media (max-width: 600px){
+    .container-signup{
+        width: 200px;
+        margin-left: 90px;
+    }
+    .background-signup{
+        background-size: auto;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width:1000px){
+    .container-signup{
+        width: 300px;
+        margin-left: 250px;
+    }
+    .background-signup{
+        background-size: auto;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    .container-signup{
+        width: 350px;
+        margin-left: 350px;
+    }
+    .background-signup{
+        background-size: auto;
+    }
+}
+
+/* Home Start*/
+
+.background-home{
+    background-image: url(../img/Home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-heading{
+    text-align: center;
+    color: rgb(235, 151, 72);
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.home-container{
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.home-label{
+    padding-left: 13px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+}
+
+.home-textarea{
+	margin-top: 15px;
+}
+
+.home-submit-btn{
+    background-color:rgb(238, 137, 48);
+    border-radius: 12px;
+    margin-top: 20px;
+    border-style: none;
+    width: 150px;
+    height: 35px;
+    color: white;
+    font-size: large;
+    margin-left: 70px;
+}
+
+.option{
+    width: 220px;
+    height: 40px;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: large;
+}
+
+.option-text{
+    text-align: center;
+}
+
+.option-selection{
+    background-color: rgb(238, 137, 48); 
+    border-radius: 12px;
+    height: 40px;
+    width: 110px;
+    color: white;
+    font-size: large;
+    border: none;
+}
+
+.non-selection{
+	background-color: white; 
+    border-radius: 12px;
+    height: 40px;
+    width: 110px;
+    color: black;
+    font-size: large;
+    border: none;
+}
+
+.profile-btn{
+	background-color:rgb(238, 137, 48);
+    border-radius: 12px;
+    margin-top: 20px;
+    border-style: none;
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-size: large;
+}
+
+
+@media (max-width: 600px){
+    .background-home{
+        background-size: auto;
+    }
+
+    .home-container{
+        width: 300px;
+        margin-left: 100px;
+    }
+}
+
+@media (min-width: 600px) and (max-width:1000px){
+    .background-home{
+        background-size: auto;
+    }
+
+    .home-container{
+        width: 300px;
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    .background-home{
+        background-size: auto;
+    }
+
+    .home-container{
+        width: 300px;
+        margin-left: 400px;
+    }
+}
+
+/* Profile Start*/
+
+.dropbtn {
+	background-color: rgb(238, 137, 48);
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 12px;
+	font-weight: 600;
+	height: 40px;
+	width: 90px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+	background-color: rgb(238, 137, 48);
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+}
+
+.show {
+	display: block;
+}
+
+.btn{
+	font-size: large;
+}
+
+@media (max-width: 600px){
+	dropbtn {
+	background-color: rgb(238, 137, 48);
+	color: white;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	border-radius: 12px;
+	font-weight: 600;
+	height: 20px;
+	width: 50px;
+	margin-top: 0px;
+	text-align: center;
+	}
+}
+
+/* Profile End*/
+
+/* Forget Password Start*/
+
+.background-forget{
+	background-image: url("../img/Tree.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.forget-container{
+	width: 400px;
+	height: 150px;
+    backdrop-filter: blur(10px);
+    margin-left: 550px;
+    margin-top: 100px;
+}
+
+.forget-heading{
+    text-align: center;
+    color: rgb(235, 151, 72);
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: 700;
+    padding-top: 40px;
+}
+
+/* Forget Password End*/
+
+/* My Profile Start */
+.profile-container{
+	width: 300px;
+	height: 150px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.update-btn{
+    width: 90px;
+    margin-left: 200px;
+    border-radius: 12px;
+    background-color: rgb(235, 151, 72);
+    border: none;
+    color: white;
+}
+
+.label{
+	padding-top: 5px;
+}
+
+/* My Profile End */
+
+/* Save Change Start */
+.save-btn{
+    width: 110px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 12px;
+    background-color: rgb(235, 151, 72);
+    border: none;
+    color: white;
+}
+/* Save Change End */
