@@ -5,25 +5,26 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class Insert {
+public class Search {
 	static String word;
-	static String meaning;
 	
-	public Insert(String word, String meaning) {
+	public Search(String word) {
 		this.word = word;
-		this.meaning = meaning;
 	}
 	
-	public Insert() {
+	public Search() {
+		
+	}
+
+	public String SearchMeaning() {
 		Configuration cfg = new Configuration();
 		SessionFactory factory = cfg.configure().buildSessionFactory();
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
-		Dictionary dt = new Dictionary(word, meaning);
-		session.save(dt);
-		tx.commit();
-		session.close();
-		factory.close();
-	
+		
+		Dictionary result  = session.get(Dictionary.class, word);
+		String Meaning = result.getMeaning();
+		return Meaning;
 	}
+	
 }

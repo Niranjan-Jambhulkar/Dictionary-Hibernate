@@ -3,6 +3,7 @@ package com.dictionary;
 import java.util.Objects;
 
 public class Dictionary {
+
 	public String word;
 	public String meaning;
 	
@@ -50,6 +51,9 @@ public class Dictionary {
 		return Objects.equals(word, other.word);
 	}
 	
-	
+	@Override
+	public String toString() {
+		return "Dictionary [word=" + word + ", meaning=" + meaning + "]";
+	}
 	
 }

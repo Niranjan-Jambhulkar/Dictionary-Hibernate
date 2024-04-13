@@ -35,7 +35,7 @@
         <input type="submit" value="Add" onclick="dailog()" class="home-submit-btn">
     </form>
     
-    <form class="option row" action="Selection" method="post">
+    <form class="option row" action="Button" method="post">
         <input type="submit" name="select" value="Meaning" class="option-text non-selection pointer col-6">
         <input type="submit" name="select" value="Add Word" class="option-text option-selection pointer col-6">
     </form>

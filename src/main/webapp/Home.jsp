@@ -22,17 +22,17 @@ String Meaning="Meaning";
 <div class="row">
 	<h1 class="home-heading col-10">Dictionary</h1>
 	
-  	<div class="dropdown col">
+  	<%-- <div class="dropdown col">
   		<button onclick="myFunction()" class="dropbtn" >Hi <%=request.getAttribute("name")%></button>
   		<form action="Dropdown" method="post" id="myDropdown" class="dropdown-content">
     		<input type="submit" name="select" Value="My Profile" class="btn"><br>
     		<input type="submit" name="select" Value="LogOut" class="btn">
   		</form>
-	</div>
+	</div> --%>
 </div>
 
 <div class="home-container">
-    <form action="Search" method="post">
+    <form action="SearchWord" method="post">
         <label for="word" class="form-label home-label row col-6">Search</label>
         <input type="text" name="word" id="" class="form-control col-6" placeholder="Enter Word" required>
         <textarea name="meaning" id="" cols="38" rows="5" class="form-control home-textarea"  readonly><%
@@ -44,7 +44,7 @@ String Meaning="Meaning";
         <input type="submit" value="Search" class="home-submit-btn">
     </form>
     
-    <form class="option row" action="Selection" method="post">
+    <form class="option row" action="Button" method="post">
         <input type="submit" name="select" value="Meaning" class="option-text option-selection pointer col-6">
         <input type="submit" name="select" value="Add Word" class="option-text non-selection pointer col-6">
     </form>

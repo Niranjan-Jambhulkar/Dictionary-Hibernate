@@ -7,19 +7,16 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import com.dictionary.Dictionary;
-import com.dictionary.Insert;
-
 /**
- * Servlet implementation class AddWord
+ * Servlet implementation class Button
  */
-public class AddWord extends HttpServlet {
+public class Button extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddWord() {
+    public Button() {
         super();
     }
 
@@ -34,12 +31,16 @@ public class AddWord extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String word = request.getParameter("word");
-		String meaning = request.getParameter("meaning");
-		Insert in = new Insert(word, meaning);
-		Insert ins = new Insert();
-		request.getRequestDispatcher("AddWord.jsp").forward(request, response);
-
+		String button = request.getParameter("select");
+		switch (button) {
+		case "Meaning":
+			response.sendRedirect("Home.jsp");
+			break;
+			
+		case "Add Word":
+			response.sendRedirect("AddWord.jsp");
+			break;
+		}
 	}
 
 }

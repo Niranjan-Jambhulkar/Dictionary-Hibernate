@@ -19,4 +19,34 @@
     <servlet-name>AddWord</servlet-name>
     <url-pattern>/AddWord</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Search</display-name>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>com.servlet.Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SearchWord</display-name>
+    <servlet-name>SearchWord</servlet-name>
+    <servlet-class>com.servlet.SearchWord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchWord</servlet-name>
+    <url-pattern>/SearchWord</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Button</display-name>
+    <servlet-name>Button</servlet-name>
+    <servlet-class>com.servlet.Button</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Button</servlet-name>
+    <url-pattern>/Button</url-pattern>
+  </servlet-mapping>
 </web-app>

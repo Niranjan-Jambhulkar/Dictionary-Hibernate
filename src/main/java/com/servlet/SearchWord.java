@@ -7,20 +7,20 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import com.dictionary.Dictionary;
-import com.dictionary.Insert;
+import com.dictionary.Search;
 
 /**
- * Servlet implementation class AddWord
+ * Servlet implementation class SearchWord
  */
-public class AddWord extends HttpServlet {
+public class SearchWord extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AddWord() {
+    public SearchWord() {
         super();
+        // TODO Auto-generated constructor stub
     }
 
 	/**
@@ -35,11 +35,11 @@ public class AddWord extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String word = request.getParameter("word");
-		String meaning = request.getParameter("meaning");
-		Insert in = new Insert(word, meaning);
-		Insert ins = new Insert();
-		request.getRequestDispatcher("AddWord.jsp").forward(request, response);
-
+		Search sr = new Search(word);
+		Search src = new Search();
+		String Meaning = src.SearchMeaning();
+		request.setAttribute("Meaning", Meaning);
+		request.getRequestDispatcher("Home.jsp").forward(request, response);
 	}
 
 }
